@@ -11,7 +11,7 @@
 ## 使用说明
 
 ```bash
-wget --no-check-certificate https://github.com/ylqjgm/Alpine/raw/branch/master/alpine.sh && chmod +x alpine.sh && ./alpine.sh
+wget --no-check-certificate https://github.com/ylqjgm/Alpine/raw/master/alpine.sh && chmod +x alpine.sh && ./alpine.sh
 ```
 
 执行脚本后会要求输入当前VPS环境，目前仅支持`lxc`及`openvz`两种，其余未测试，不知是否可行。
@@ -36,3 +36,17 @@ wget --no-check-certificate https://github.com/ylqjgm/Alpine/raw/branch/master/a
 
 > 1. 系统更换为`Alpine`后，再次启动会造成VNC界面无法登陆，但SSH不受影响。
 > 2. 可能会存在`Caddy`设置https后无法启动的问题（本地环境，未验证真实环境）。
+
+## 更新记录
+
+**2018.09.03**
+
+> 介于备案机制，担心个人git仓库安全，将代码转移至github
+
+**2018.08.29**
+
+> 更新域名信息
+
+**2018.08.19**
+
+> 1.0.0版本发布
