@@ -39,6 +39,10 @@ wget --no-check-certificate https://github.com/ylqjgm/Alpine/raw/master/alpine.s
 
 ## 更新记录
 
+**2018.09.05**
+
+> 自动获取最新镜像包
+
 **2018.09.03**
 
 > 介于备案机制，担心个人git仓库安全，将代码转移至github

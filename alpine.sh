@@ -60,7 +60,8 @@ fi
 cd /
 # download alpine
 mkdir -p /lovekk
-wget --no-check-certificate http://uk.images.linuxcontainers.org/images/alpine/3.8/amd64/default/20180817_13:01/rootfs.tar.xz -O ~/rootfs.tar.xz
+path=$(wget -O- http://images.linuxcontainers.org/meta/1.0/index-system | grep -v edge | awk '-F;' '($1=="alpine" && $3=="amd64") {print $NF}' | tail -1)
+wget --no-check-certificate http://images.linuxcontainers.org${path}rootfs.tar.xz -O ~/rootfs.tar.xz
 xz -d ~/rootfs.tar.xz
 tar xf ~/rootfs.tar -C /lovekk
 
